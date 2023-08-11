@@ -22,3 +22,18 @@ def move(snake_head):
         ypos = snake_head.ycor()
         ypos += 20
         snake_head.sety(ypos)
+
+    if snake_head.direction == "down":
+        ypos = snake_head.ycor()
+        ypos -= 20
+        snake_head.sety(ypos)
+
+    if snake_head.direction == "right":
+        xpos = snake_head.xcor()
+        xpos += 20
+        snake_head.setx(xpos)
+        
+    if snake_head.direction == "left":
+        xpos = snake_head.xcor()
+        xpos -= 20
+        snake_head.setx(xpos)
