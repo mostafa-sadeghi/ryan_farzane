@@ -13,7 +13,7 @@ def create_turtle(tshape, tcolor):
 
 def change_position(object):
     xpos = randint(-270, 270)
-    ypos = randint(-270, 230)
+    ypos = randint(-270, 210)
     object.goto(xpos, ypos)
 
 
@@ -32,7 +32,7 @@ def move(snake_head):
         xpos = snake_head.xcor()
         xpos += 20
         snake_head.setx(xpos)
-        
+
     if snake_head.direction == "left":
         xpos = snake_head.xcor()
         xpos -= 20
