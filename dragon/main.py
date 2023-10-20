@@ -83,7 +83,8 @@ while running:
 
     if dragon_lives <= 0:
         show_text('Game Over', 'Press any key to continue...')
-        pygame.mixer.music.stop()
+        # pygame.mixer.music.stop()
+        
         score = 0
         dragon_lives = 3
         meat_velocity = MEAT_STARTING_VELOCITY
@@ -93,7 +94,7 @@ while running:
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
                     is_paused = False
-                    pygame.mixer.music.play(-1)
+                    # pygame.mixer.music.play(-1)
                 if event.type == pygame.QUIT:
                     is_paused = False
                     running = False
